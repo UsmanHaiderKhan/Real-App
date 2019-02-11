@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 22px 10px;
+    border-bottom: none !important;
+    transition: all 0.5s fade-in;
+    /* background-color: #34495e !important; */
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.navbar ul li a {
+    font-size: 14px;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover {
+    color: deepskyblue !important;
+}
+
+.navbar-toggler {
+    border: 3px solid wheat !important;
+    border-radius: 0px;
+}
+
+.location {
+    border: 2px solid #fefefe;
+    border-radius: 50px;
+}
+
+/* ==============================
+        Slider Section Styling
+================================= */
+#home {
+    width: 100%;
+    height: 700px;
+    padding: 0 0 10% 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/slider.jpg');
+}
+
+.slider-overlay {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.slider-content {
+    position: absolute;
+    width: 100%;
+    top: 39%;
+}
+
+.icons .fab {
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.btn1 {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: -6px;
+}
+
+.btn1:hover {
+    color: white;
+    text-decoration: none;
+    background-color: dodgerblue;
+    transition: all 0.5s ease-in;
+}
+
+.btn2 {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+
+.btn2:hover {
+    color: white;
+    text-decoration: none;
+    background-color: firebrick;
+    transition: all 0.5s ease-in;
+}
+
+
+.social-cricle {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-cricle:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-scroll-color {
+    background-color: #34495e;
+}
+
+/* ==============================
+     Service Section Styling
+================================= */
+.service-area {
+    margin-top: 30px;
+}
+
+.service-area p {
+    margin-bottom: -5px;
+}
+
+.section-title h2 {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all .5s ease 0s;
+    margin-top: 20px;
+    z-index: 9;
+
+}
+
+.service-wrap::after,
+.service-wrap::before {
+    content: "";
+    height: 314%;
+    position: absolute;
+    transform: rotate(52deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+
+}
+
+.service-wrap::before {
+    top: -37px;
+    left: 100%;
+
+}
+
+.service-wrap:hover:before {
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after {
+    right: 100%;
+    bottom: -37px;
+
+}
+
+.service-wrap:hover:after {
+    right: -27px;
+    opacity: 1;
+
+}
+
+.service-wrap:hover {
+    color: white;
+}
+
+.service-wrap:h3 {
+    color: white;
+}
+
+.service-wrap:hover h3 {
+    color: white;
+}
+
+.service-wrap:hover h3:afetr {
+    background-color: white;
+}
+
+.service-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.service-wrap:hover .service-icon i {
+    transform: rotate(360deg);
+}
+
+.service-wrap h3 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
