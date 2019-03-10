@@ -8,5 +8,12 @@ $(function () {
             $("nav").removeClass("nav-scroll-color");
 
         }
+    });
+});
+$(function () {
+    $(".text").typed({
+        strings: ["I Love <strong class='primary'>Coding</strong>", "And <strong class='primary'>Sharing Code</strong>"],
+        typespeed: 0,
+        loop: true,
     })
-})
+});
